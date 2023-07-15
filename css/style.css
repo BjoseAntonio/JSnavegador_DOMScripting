@@ -231,6 +231,27 @@ img{
     }
 }
 
+/* Cursos */
+.curso{
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--color4);
+}
+
+@media (min-width: 768px){
+   .curso{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+   }
+}
+
+.curso:last-of-type{
+    border: none;
+    padding-bottom: 0;
+}
+
+
+
 
 
 
