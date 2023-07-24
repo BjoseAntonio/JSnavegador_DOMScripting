@@ -279,6 +279,7 @@ img{
 .campo__field{
     flex: 1;
     border: 1px solid var(--color4);
+    border: none;
 }
 
 .campo__field--textarea{
