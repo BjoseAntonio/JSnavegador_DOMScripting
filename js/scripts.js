@@ -47,3 +47,38 @@ window.onload = function(){
 document.addEventListener('DOMContentLoaded', function(){
     console.log(4);
 })
+
+
+// Seleccionar elementos y asociarlos a un evento 
+const btnEnviar = document.querySelector('.campo .boton--secundario');
+btnEnviar.addEventListener('click', function(evento) {
+    console.log(evento);
+    evento.preventDefault();
+    console.log('Enviando formulario');
+    
+});
+
+
+// Eventos de los input y textArea 
+const datos = {
+    nombre:'',
+    email:'',
+    mensaje:''
+}
+
+
+const nombre = document.querySelector('#nombre');
+const email = document.querySelector('#email');
+const mensaje = document.querySelector('#mensaje');
+
+nombre.addEventListener('input', leerTexto);
+email.addEventListener('input', leerTexto);
+mensaje.addEventListener('input', leerTexto);
+
+
+function leerTexto(e){
+    // console.log(e.target.value);
+    datos[e.target.id] = e.target.value;
+
+    console.log(datos)
+}
