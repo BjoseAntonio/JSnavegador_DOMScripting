@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 // Seleccionar elementos y asociarlos a un evento 
-const btnEnviar = document.querySelector('.campo .boton--secundario');
+const btnEnviar = document.querySelector('.boton--secundario');
 btnEnviar.addEventListener('click', function(evento) {
     console.log(evento);
     evento.preventDefault();
