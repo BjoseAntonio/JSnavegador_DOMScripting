@@ -7,6 +7,8 @@
     --color4: #84A7A1;
     --blanco: #ffffff;
     --negro:  #000000;
+    --colorError: #99202E;
+    --colorValidacion: #4BAB4E;
 }
 /*  */
 html{
@@ -286,6 +288,24 @@ img{
     height: 40rem;
 }
 
+/*Error */
+.error{
+    background-color: var(--colorError);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+
+}
+
+/* Validación */
+.validar{
+    background-color: var(--colorValidacion);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
 
 
 
